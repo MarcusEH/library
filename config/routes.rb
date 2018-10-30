@@ -9,5 +9,8 @@ Rails.application.routes.draw do
     delete 'books/:id' => 'books#destroy'
     get '/authors' => 'authors#index'
     get '/authors/:id' => 'authors#show'
+    post '/authors' => 'authors#create'
+    patch '/authors/:id' => 'authors#update'
+    delete '/authors/:id' => 'authors#destroy'
   end 
 end
